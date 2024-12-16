@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <form action="/shorten/" method="post" enctype="application/json">
+        <input type="url" name="original_url" placeholder="Enter URL to shorten" required>
+        <button type="submit">Shorten</button>
+    </form>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        <label for="file">Upload file with URLs:</label>
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
